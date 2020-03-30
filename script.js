@@ -76,7 +76,7 @@ $(function() {
         console.log($("#start1").height()); // récupère et affiche la hauteur de l'élément dans la console
     });
 
-});*/
+});
 
 $(function() {
     $("#start1").click(function() {
@@ -96,4 +96,10 @@ $(function() {
 
     });
 
+});*/
+
+$(function() {
+    $("#start1").click(function() {
+        $("#div2").load("demo.txt");
+    });
 });

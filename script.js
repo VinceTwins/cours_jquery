@@ -37,7 +37,7 @@ $(document).ready(function() {
         $("div").remove(); // (supprime un élément html)
         $("div").empty(); // (vide un élément html)
     });
-});*/
+});
 
 $(function() {
     /*$("#start1").click(function() {
@@ -68,12 +68,32 @@ $(function() {
     $("#start1").click(function() {
         $("#start2").width(80); // change la largeur de l'élément
         console.log($("#start1").width()); // récupère et affiche la largeur de l'élément dans la console
-    });*/
+    });
 
     $("#start1").click(function() {
         $("#start2").width(80);
         $("#start2").height(80); // change la hauteur de l'élément
         console.log($("#start1").height()); // récupère et affiche la hauteur de l'élément dans la console
+    });
+
+});*/
+
+$(function() {
+    $("#start1").click(function() {
+        //$("#p1").css("border-color", "green");
+        //$("#p1").parent().css("border-color", "green"); // change le parent direct de l'élément
+        //$("#p1").parents().css("border-color", "green"); // change les parents, gd-parents... de l'élément
+        //$("#div1").children().css("border-color", "blue"); // change les enfants directs de l'élément
+        //$("#main").find("p").css("border-color", "blue"); // change les éléments que l'on cherche dans la function find(), dans l'élément $("...")
+        //$("#p1").siblings().css("border-color", "blue"); // change les frères directs de l'élément sans le séléctionner lui même
+        //$("#p1").next().css("border-color", "blue"); // change l'élément suivant
+        //$("p").first().css("border-color", "blue"); // change le permier élément
+        //$("p").last().css("border-color", "blue"); // change le dernier élément
+        //$("p").eq(2).css("border-color", "blue"); // change l'élément à la troisième place (index commence à 0)
+        //$("p").filter(".cool").css("border-color", "blue"); // change les éléments qui correspondent au filtre
+        $("p").not(".cool").css("border-color", "blue"); // change les éléments qui correspondent au filtre
+
+
     });
 
 });

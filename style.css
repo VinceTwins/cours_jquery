@@ -1,7 +1,15 @@
-.red {
+/*.red {
     color: red;
 }
 
 .bold {
     font-weight: bold;
+}*/
+
+* {
+    border: 5px solid black;
+    margin: 10px;
+}
+body, html {
+    border: 5px none red;
 }
